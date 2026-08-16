@@ -185,9 +185,9 @@ WorldEditPE 让你在手机上的网易版《我的世界》里也能获得桌�
 ## 安装
 
 1. 在 **MC Studio**（网易开发者平台）中打开世界工程
-2. 将 `behavior_pack/` 与 `resource_pack/` 放入 `行为包` / `资源包` 目录
+2. 将 `behavior_pack/` 放入 `行为包` 目录
    （或直接导入发布包 `WorldEditPE_v0.1.zip`）
-3. 在 Studio 中确认两个包的 uuid 无冲突（`manifest.json`）
+3. 在 Studio 中确认行为包 uuid 无冲突（`manifest.json`）
 4. 运行世界，聊天框输入 `=help` 验证
 
 ---
@@ -195,7 +195,7 @@ WorldEditPE 让你在手机上的网易版《我的世界》里也能获得桌�
 ## 构建与打包
 
 ```bash
-# 打包发布 zip（包含 behavior_pack + resource_pack）
+# 打包发布 zip（仅 behavior_pack）
 python3 scripts/package.py
 ```
 
@@ -220,8 +220,6 @@ WorldExit/
 │       ├── clipboard/          # 剪贴板
 │       ├── brush/              # 刷子
 │       └── utils/              # messages(通知)/blocks(方块)
-├── resource_pack/
-│   └── manifest.json           # 资源包清单
 └── scripts/
     └── package.py              # 打包脚本
 ```
@@ -230,10 +228,20 @@ WorldExit/
 
 ## 许可
 
+### 版权声明
 ```
 WorldEditPE - WorldEdit for NetEase Minecraft (Bedrock)
 Copyright (C) 2026 JiHong-Studio (ChengXing507 & Ecaps)
 
+基于 EngineHub/WorldEdit（Copyright © sk89q and WorldEdit team and contributors）
+https://github.com/EngineHub/WorldEdit
+以及早期社区 WorldEditPE 原型（匿名贡献者）开发。
+世界编辑大师（WorldEdit）的版权为其各自所有者所有。
+WorldEditPE 与 EngineHub/WorldEdit 项目无任何从属或背书关系。
+```
+
+### 许可证
+```
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -248,5 +256,4 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
-**上游致谢**：架构与指令设计参考 [EngineHub/WorldEdit](https://github.com/EngineHub/WorldEdit)
-（Copyright © EngineHub；GPLv3）。
+完整许可证文本见 `LICENSE` 文件。
