@@ -1,0 +1,6 @@
+# 构建产物（由 scripts/package.py 生成）
+*.zip
+
+# Python
+__pycache__/
+*.pyc

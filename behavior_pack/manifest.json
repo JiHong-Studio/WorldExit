@@ -1,0 +1,31 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "WorldEditPE",
+    "description": "WorldEdit for NetEase Bedrock Edition",
+    "uuid": "07a2c49c-2612-48c0-8c28-5d5ab222a9bb",
+    "version": [
+      0,
+      1,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      19,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "WorldEditPE Behavior",
+      "type": "data",
+      "uuid": "a5a1ef9c-f585-4f6e-9cd3-c24fcd55fec0",
+      "version": [
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "dependencies": []
+}
